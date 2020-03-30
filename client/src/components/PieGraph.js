@@ -10,7 +10,7 @@ export default function PieGraph({ userData, colors }) {
         { name: "Algorithms", value: 26 },
         { name: "Code", value: 38 }
     ];
-    
+
     const onPieEnter = (data, index) => {
         setActiveIndex(index);
     };
@@ -26,7 +26,6 @@ export default function PieGraph({ userData, colors }) {
             startAngle,
             endAngle,
             fill,
-            payload,
             percent,
             value
         } = props;

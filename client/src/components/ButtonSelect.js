@@ -3,14 +3,25 @@ import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import { makeStyles } from "@material-ui/core/styles";
 
+const useStyles = makeStyles(theme => ({
+    root: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        "& > *": {
+            margin: theme.spacing(1)
+        }
+    }
+}));
+
 export default function ButtonSelect({ onClick }) {
-    const [date, setDate] = useState("Today")
+    const [date, setDate] = useState("Today");
     const classes = useStyles();
 
     const handleClick = e => {
         e.preventDefault();
-        setDate(e.currentTarget.value)
-        onClick(e.currentTarget.value)
+        setDate(e.currentTarget.value);
+        onClick(e.currentTarget.value);
     };
 
     return (
@@ -51,14 +62,3 @@ export default function ButtonSelect({ onClick }) {
         </div>
     );
 }
-
-const useStyles = makeStyles(theme => ({
-    root: {
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        "& > *": {
-            margin: theme.spacing(1)
-        }
-    }
-}));
