@@ -5,3 +5,9 @@
 .pie-text {
   font-size: 1.25vw;
 }
+
+.data-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

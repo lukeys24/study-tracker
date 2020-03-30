@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Graphs from './components/Graphs';
+import DataDisplay from './components/DataDisplay';
 
 function App() {
   return (
     <div className="App">
-      <Graphs/>
+      <DataDisplay/>
     </div>
   );
 }
