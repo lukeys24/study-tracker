@@ -1,13 +1,9 @@
 .App {
-  text-align: center;
-}
-
-.pie-text {
-  font-size: 1.25vw;
+    text-align: center;
 }
 
 .data-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

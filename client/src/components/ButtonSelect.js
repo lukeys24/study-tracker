@@ -40,6 +40,13 @@ export default function ButtonSelect({ onClick }) {
                 >
                     Month
                 </Button>
+                <Button
+                    onClick={handleClick}
+                    variant={date == "Year" ? "contained" : ""}
+                    value="Year"
+                >
+                    Year
+                </Button>
             </ButtonGroup>
         </div>
     );
